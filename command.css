@@ -1,0 +1,252 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #a5a5a5;
+}
+
+body.dark-theme {
+  background: #1a1a1a;
+}
+
+/* Header Styles */
+header {
+  background: #333;
+  color: #898989;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #ccc;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #111;
+  color: #ccc;
+}
+
+/* Heading Styles */
+h2 {
+  color: #0099cc;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Code Styles */
+code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background: #303f9f;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #9c27b0;
+}
+
+.footer {
+  color: white;
+}
+
+.footer:hover {
+  background-color: rgba(0, 75, 251, 0.259);
+  color: black;
+}
+
+/* Search and Clear Button Styles */
+#search-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+#clear-button,
+#ri-search-line {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#clear-button:hover,
+#ri-search-line:hover {
+  background: #b60000;
+}
+
+/* Search Input Styles */
+#search-input {
+  background-color: rgba(65, 65, 65, 0.411);
+  padding: 10px;
+  border: 2px solid #41cc00;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #c2c2c2;
+}
+
+#search-input::placeholder {
+  color: rgba(255, 255, 255, 0.552);
+  font-style: italic;
+  cursor: text;
+}
+
+/* Back to Main Page Button Styles */
+.main-site-back {
+  background: #ff2b2b;
+  color: #000000;
+  border: none;
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  top: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+body.dark-theme .main-site-back {
+  background: #ab0000;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .all-commands {
+    font-size: 12px;
+  }
+
+  #search-input {
+    padding: 8px;
+    border: 2px solid #0099cc;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+
+  #search-container {
+    top: 10px;
+    right: 10px;
+    font: 12px;
+  }
+
+  #search-container button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .main-site-back {
+    top: 26px;
+    width: 48px;
+    height: 28px;
+    font-size: 0;
+  }
+}
+
+/* Fügen Sie folgende CSS-Regeln in Ihre Stylesheet-Datei ein */
+
+/* Befehle */
+ul li code {
+  background: linear-gradient(to bottom, #0483ae, #001f38);
+  color: #fff; /* Textfarbe für Befehle */
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* Ändern Sie die Farben und das Styling nach Ihren Wünschen. */
+
+/* Beschreibungen */
+ul li {
+  margin-bottom: 10px;
+  padding-left: 20px; /* Einrückung für Beschreibungen */
+  position: relative;
+}
+
+/* Pfeil für Beschreibungen */
+ul li:before {
+  content: "➜"; /* Pfeil-Symbol für Beschreibungen */
+  color: #00ffaa; /* Farbe des Pfeils */
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* Stil für Beschreibungen */
+ul li p {
+  font-size: 16px; /* Schriftgröße für Beschreibungen */
+  margin: 5px 0;
+  color: #ccc; /* Textfarbe für Beschreibungen */
+}
+
+/* Hervorheben von Schlüsselwörtern in den Beschreibungen */
+ul li p code {
+  background-color: #0099cc; /* Hintergrundfarbe für Schlüsselwörter in Beschreibungen */
+  color: #fff; /* Textfarbe für Schlüsselwörter in Beschreibungen */
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+#command:hover {
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #4caf56, #016a36);
+}
+
+.alert.alert-success {
+  background-color: #4caf50; /* Hintergrundfarbe (grün) */
+  color: white; /* Textfarbe (weiß) */
+  padding: 10px; /* Innenabstand */
+  text-align: center; /* Text zentrieren */
+  position: fixed; /* Positionierung (oben rechts) */
+  top: 100px;
+  right: 800px;
+  z-index: 1000; /* Stapelebene über anderen Elementen */
+  border-radius: 5px; /* Abrundung der Ecken */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Schatten */
+}

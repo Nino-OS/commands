@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="command.css" />
+    <link rel="icon" href="../images/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../images/site.webmanifest" />
+    <title>Nino-OS | Commands</title>
+  </head>
+  <body>
+    <button class="main-site-back" onclick="redirectToMainSite()">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAsElEQVRIS+WU2w2AIAwAYQM30RF0Ih1BJ9MRdBNHsI1iGsKrafkwkvSP3NEHtabysZX55j+CBko5QizckpaUCOErRPcIZo4kJ6DwA8A9xKklEMPxIbEMVOAxgRo8JFCF+wIK5/QxdPctPe0BCjaIVkqnvfWbTCU7XBy4Y+k/LjRFqpLUmLpyiTJJ/WSVTEpWhSiTnAB7RjPBbaq67NxQoGTiwlO7SOEr3IiSEolk3xdcC5kmGZBsfrUAAAAASUVORK5CYII="
+        alt="Back"
+      />
+      Back
+    </button>
+
+    <script>
+      function redirectToMainSite() {
+        window.location.href = "https://nino-os.github.io/dashboard/";
+      }
+    </script>
+    <header>
+      <nav>
+        <h1><span>Nino-OS</span> Commands</h1>
+      </nav>
+    </header>
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Seach 🔗" />
+      <button id="ri-search-line" class="ri-search-line"></button>
+      <button id="clear-button"><i class="ri-close-line"></i> Reset</button>
+    </div>
+
+    <main class="all-commands">
+      <section id="public">
+        <h2>Everyone can use:</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/rick-roll')"
+              >/rick-roll</code
+            >
+            - [@user] - Rick-Roll a MEMBER ®,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/google-ai')"
+              >/google-ai</code
+            >
+            - [input] - Get an ANSWER from the Google-AI 🤖,
+          </li>
+          <h2> </h2>
+          <li>
+            <code
+              id="command"
+              onclick="copyCommand('/game-rock-paper-scissors')"
+              >/game-rock-paper-scissors</code
+            >
+            - [@user] - Play with a MEMBER 🪨 ROCK, 📰 PAPER, ✂️ SCISSORS,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/mc-advancement')"
+              >/mc-advancement</code
+            >
+            - [text] - (icon) - Generates a custom Minecraft advancement 🎖,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/game-snake')"
+              >/game-snake</code
+            >
+            - (OPEN THE GAME) - Play the SNAKE GAME on Discord 🐍,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/timestamp-calculator')"
+              >/timestamp-calculator</code
+            >
+            - [date] - [time] - Convert date and time to a timestamp ⏲,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/mc-skin')">/mc-skin</code>
+            - [@user] - Get a Minecraft-Skin from an MC-USER 🟩,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/meme')">/meme</code> - Get
+            a MEME 😂,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/remove-bg')"
+              >/remove-bg</code
+            >
+            - [image] - Removes the background of an image 🛠,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/badge-check')"
+              >/badge-check</code
+            >
+            - [badge] - Check who has a BADGE on your server 🔨,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/invites-tracker')"
+              >/invites-tracker</code
+            >
+            - [@user] - Gets a user's server invite count 🔢,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/emoji-infos')"
+              >/emoji-infos</code
+            >
+            - [emoji] - Get the Info's from an EMOJI (FULL NAME + ID),
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/enlarge-emoji')"
+              >/enlarge-emoji</code
+            >
+            - [emoji] - Create an ENLARGE-EMOJI 🛠,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/feedback')"
+              >/feedback</code
+            >
+            - [stars] + (a menu opens) - Send FEEDBACK,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/translate')"
+              >/translate</code
+            >
+            - [message] + [language] - Use a Translator,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/credits')">/credits</code>
+            - View the CREDITS,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/support')">/support</code>
+            - How to SUPPORT me [Robotic WLRD],
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/top-gg')">/top-gg</code>
+            - View the BOT on Top.GG (website),
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/iq')">/iq</code> - Get IQ
+            Number,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/say')">/say</code> - (a
+            menu opens) - You: Hi, The Bot: Hi,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/about-robotic')"
+              >/about-robotic</code
+            >
+            - View ALL Info's about Robotic Germany,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/os-infos')"
+              >/os-infos</code
+            >
+            - Infos about the BOT,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/os-patch-notes')"
+              >/os-patch-notes</code
+            >
+            - View the Patch Notes,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/os-ping')">/os-ping</code>
+            - Check your PING [MS PING],
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/os-prefix')"
+              >/os-prefix</code
+            >
+            - The Prefix of the BOT,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/calculator')"
+              >/calculator</code
+            >
+            - Use a Calculator 🔢,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/test')">/test</code> -
+            Testing the BOT,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/image')">/image</code>
+            - Create an AI image 🖼️,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/random-hex')"
+              >/random-hex</code
+            >
+            - Get RANDOM Hex code,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/coin-flip')"
+              >/coin-flip</code
+            >
+            - Flip a Coin, get (Kopf/Head 🙂 | OR | Zahl/Number 🔢) 🪙,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/ping')">/ping</code> -
+            Playing PING_PONG,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/kekse')">/kekse</code>
+            - The BOT gives you a COOKIE,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/help')">/help</code> -
+            View Help & ALL Commands,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/invite')">/invite</code>
+            - Invite the BOT
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="admin">
+        <h2>ONLY ADMIN's can use:</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/clear')">/clear</code> -
+            [about] - (user) - LÖSCHE Nachrichten 🚮,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/setup')">/setup</code> -
+            How to SETUP the BOT,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/kick')">/kick</code> -
+            [@user] - Kick USER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/server-infos')"
+              >/server-infos</code
+            >
+            - Get the SERVER Infos,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/unbann-all')"
+              >/unbann-all</code
+            >
+            - UNBANN __ALL__ members,
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="mod">
+        <h2>ONLY ADMIN's and Mod's can use:</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/nickname')"
+              >/nickname</code
+            >
+            - [@user] - [nickname] - Change the nickname of a MEMBER 🛠,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/announcement')"
+              >/announcement</code
+            >
+            - [channel] - (a menu opens) - Create an Announcement 📢,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/role-all')"
+              >/role-all</code
+            >
+            - [@ROLE] - Give ALL-MEMBERS a Role 🛠,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/role-infos')"
+              >/role-infos</code
+            >
+            - [@ROLE] - Get ALL the info from a ROLE 🧾,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/voice-kick')"
+              >/voice-kick</code
+            >
+            - [@user] - Kick a user from a voice channel 🔊,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/transcript')"
+              >/transcript</code
+            >
+            - [channel] - [number] - Get the Transcript from a channel 📬,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/member-count')"
+              >/member-count</code
+            >
+            - Look at the MEMBERCOUNT in a TABLE ⚙,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/mod-dm')">/mod-dm</code> -
+            [target] + [content] - Send a MEMBER a SERVER-DM,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/slowmode')"
+              >/slowmode</code
+            >
+            - [duration] + (channel) - Set a CHANNEL in slowmode,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/create-poll')"
+              >/create-poll</code
+            >
+            - [description] + (channel) - Create a POLL [✅|❌],
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/create-embed')"
+              >/create-embed</code
+            >
+            - [title] + [description] + [color] - Send a CUSTOM Embed,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/acc-infos')"
+              >/acc-infos</code
+            >
+            - [@user] - Check Info's about the USER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/timeout')">/timeout</code>
+            - [@user], [time in sek.] - Timeout a MEMBER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/ban')">/ban</code> -
+            [@user] - Ban USER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/unban')">/unban</code> -
+            [userid (z.B. 123456789)] - Unban USER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/timeout')">/timeout</code>
+            - [@user] - UNTIMEOUT a MEMBER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/get-avatar')"
+              >/get-avatar</code
+            >
+            - Get an Avatar from a MEMBER,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/warn')">/warn</code> -
+            [@user] - WARN a MEMBER,
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="giveaway">
+        <h2>The Giveaway-System commands can be used by Mods and Admins 🎁</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/create-giveaway')">
+              /create-giveaway
+            </code>
+            - [prize] + [duration] - (winners) - (channel) - Create a giveaway
+            🎉
+          </li>
+          <h2> </h2>
+          <h2> </h2>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/reroll-giveaway')">
+              /reroll-giveaway
+            </code>
+            - [message-id] - [winners] - Reroll a giveaway 🔄
+          </li>
+          <h2> </h2>
+          <h2> </h2>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/end-giveaway')">
+              /end-giveaway
+            </code>
+            - [message-id] - Complete a giveaway ⛔
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="leveling">
+        <h2>The Leveling-System commands can by Mod's and Admin's ⬆</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/level-setup')"
+              >/level-setup</code
+            >
+            - [channel] - Setup the LEVELING-System 🟢,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/level-disable')"
+              >/level-disable</code
+            >
+            - Disable the LEVELING-System 🔴,
+          </li>
+          <h2> </h2>
+          <li>
+            <address>ONLY ADMIN's can use:</address>
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/level-system-remove')"
+              >/level-system-remove</code
+            >
+            - [@user] - Remove a Member from the Level-SYSTEM ⬇,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/xp-give')">/xp-give</code>
+            - [@user] - [xp] - Give a Member XP ⬆,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/xp-remove')"
+              >/xp-remove</code
+            >
+            - [@user] - [xp] - Remove a Member XP ⬇,
+          </li>
+          <h2> </h2>
+          <li>
+            <address>This can be used by everyone:</address>
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/rank')">/rank</code> -
+            (@user) - See the RANK of you/a member ⬆,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/leaderboard')"
+              >/leaderboard</code
+            >
+            - View the SERVER Leaderboard ⬆
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="welcome">
+        <h2>The Welcome-System commands can by Mod's and Admin's 👋</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/setup-welcome')"
+              >/setup-welcome</code
+            >
+            - [channel] - Setup the WELCOMING-System 🟢,
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/disable-welcome')"
+              >/disable-welcome</code
+            >
+            - Disable the WELCOMING-System 🔴
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="counting">
+        <h2>The Counting-System commands can by Mod's and Admin's 🔢</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/start-counting')"
+              >/start-counting</code
+            >
+            - Start the Counting System 🔢
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/stop-counting')"
+              >/stop-counting</code
+            >
+            - DISABLE the COUNTING system 🔢
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="autopublish">
+        <h2>The Autopublish-System commands can by Mod's and Admin's 📢</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/auto-publish-add')"
+              >/auto-publish-add</code
+            >
+            - Add a channel for Autopublish 📢
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/auto-publish-remove')"
+              >/auto-publish-remove</code
+            >
+            - Remove a channel from Autopublish 📢
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="music">
+        <h2>The Music-System commands can be used by ALL MEMBERS 🎶</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/music-play')"
+              >/music-play</code
+            >
+            - Play a song 🎵
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-pause')"
+              >/music-pause</code
+            >
+            - Pause a song ⏸
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-resume')"
+              >/music-resume</code
+            >
+            - Resume a song ⏯
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-rewind')"
+              >/music-rewind</code
+            >
+            - Rewind seconds in a song ⏪
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-forward')"
+              >/music-forward</code
+            >
+            - Forward seconds in a song ⏩
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-skip')"
+              >/music-skip</code
+            >
+            - Skip a song ⏩
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-volume')"
+              >/music-volume</code
+            >
+            - Adjust the player's volume 🔉
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-shuffle')"
+              >/music-shuffle</code
+            >
+            - Shuffle current playlist 🔀
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-loop')"
+              >/music-loop</code
+            >
+            - Display loop options 🔁
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-stop')"
+              >/music-stop</code
+            >
+            - Stop the music player ⏹
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-nowplaying')"
+              >/music-nowplaying</code
+            >
+            - Display info about the currently playing song 📌
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/music-list')"
+              >/music-list</code
+            >
+            - Get the list of your currently active queue 📑
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="jointocreate">
+        <h2>The Join-to-create commands can be used by Mod's and Admin's 🔊</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/jointocreate-setup')"
+              >/jointocreate-setup</code
+            >
+            - [channel] - (userlimit) - Setup the JOIN-To-CREATE 🔊
+          </li>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/jointocreate-disable')"
+              >/jointocreate-disable</code
+            >
+            - Disable the Join-To-CREATE 🔇
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+
+      <section id="nsfw">
+        <h2>ONLY USED IN NSFW-CHANNEL's 🔞</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/nsfw')">/nsfw</code> -
+            [type] - Get a 🔞 content ❗
+          </li>
+          <h2> </h2>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2023-2024
+        <a class="footer" href="https://nino-os.github.io/dashboard/"
+          >Create by Robotic Germany ✠</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function copyCommand(command) {
+        const commandElement = document.querySelector(
+          `code[id="command"][onclick*="${command}"]`
+        );
+        if (commandElement) {
+          const commandText = commandElement.textContent;
+
+          // Verwenden Sie das Clipboard API, um den Text zu kopieren
+          navigator.clipboard
+            .writeText(commandText)
+            .then(function () {
+              // Erfolgreich kopiert
+              const alert = document.createElement("div");
+              alert.className = "alert alert-success";
+              alert.textContent = "Command copied: " + commandText;
+              document.body.appendChild(alert);
+
+              // Entfernen Sie die Benachrichtigung nach einigen Sekunden (optional)
+              setTimeout(() => {
+                alert.style.display = "none";
+              }, 2000); // 4000 Millisekunden (4 Sekunden)
+            })
+            .catch(function (error) {
+              // Fehler beim Kopieren
+              alert("Copy failed: " + error);
+            });
+        } else {
+          alert("Command not found :(");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.querySelector(".ri-search-line"); // Change this line
+        const sections = document.querySelectorAll("section");
+        const restButton = document.getElementById("clear-button");
+
+        // Die Funktion für die Suchfunktion
+        function performSearch() {
+          const query = searchInput.value.toLowerCase();
+
+          let foundResults = false;
+
+          sections.forEach(function (section) {
+            const commands = section.querySelectorAll("li");
+            const h2 = section.querySelector("h2");
+
+            let sectionVisible = false;
+
+            commands.forEach(function (command) {
+              const text = command.textContent.toLowerCase();
+              const isVisible = text.includes(query);
+
+              if (isVisible) {
+                foundResults = true;
+                sectionVisible = true;
+                command.style.scrollMarginTop = "500px";
+                command.scrollIntoView({ behavior: "smooth" });
+              }
+
+              command.style.display = isVisible ? "block" : "none";
+            });
+          });
+
+          if (searchInput.value !== "") {
+            if (!foundResults) {
+              searchInput.value = "NO RESULT";
+              searchInput.style.color = "#FF0000";
+              searchInput.placeholder = "NO RESULT";
+
+              setTimeout(function () {
+                searchInput.value = "";
+                searchInput.style.color = "#666";
+                searchInput.placeholder = "Suchen...";
+                performSearch();
+              }, 1400);
+            } else {
+              searchInput.value = "";
+              performSearch();
+
+              setTimeout(function () {
+                searchInput.value = `${query}`;
+              }, 200);
+
+              setTimeout(function () {
+                searchInput.value = "Searching ...";
+                searchInput.style.color = "#e07f00";
+                searchInput.placeholder = "Searching ...";
+              }, 400);
+
+              setTimeout(function () {
+                searchInput.value = "FOUND 🔍";
+                searchInput.style.color = "#4be000";
+                searchInput.placeholder = "FOUND 🔍";
+              }, 800);
+
+              setTimeout(function () {
+                searchInput.value = "";
+                searchInput.style.color = "#666";
+                searchInput.placeholder = "Suchen...";
+              }, 2000);
+            }
+          }
+        }
+
+        // Führen Sie die Suche aus, wenn die Eingabetaste gedrückt wurde
+        searchInput.addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            performSearch();
+          }
+        });
+
+        window.addEventListener("load", function () {
+          const searchTerm = localStorage.getItem("searchTerm");
+          searchInput.value = "";
+        });
+
+        // Führen Sie die Suche aus, wenn der Suchen-Button geklickt wurde
+        searchButton.addEventListener("click", performSearch);
+
+        restButton.addEventListener("click", function () {
+          searchInput.value = "Resting 🚮"; // Leeren Sie das Suchfeld
+          searchInput.style.color = "#e00000";
+          searchInput.placeholder = "Resting 🚮"; // Ändern Sie den Placeholder-Text
+
+          setTimeout(function () {
+            searchInput.value = "";
+            searchInput.style.color = "#666";
+            searchInput.placeholder = "Suchen...";
+            performSearch();
+          }, 800);
+        });
+      });
+    </script>
+  </body>
+</html>
