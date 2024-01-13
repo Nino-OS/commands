@@ -30,22 +30,33 @@
     <title>Nino-OS | Commands</title>
   </head>
   <body>
-    <button class="main-site-back" onclick="redirectToMainSite()">
-      <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAsElEQVRIS+WU2w2AIAwAYQM30RF0Ih1BJ9MRdBNHsI1iGsKrafkwkvSP3NEHtabysZX55j+CBko5QizckpaUCOErRPcIZo4kJ6DwA8A9xKklEMPxIbEMVOAxgRo8JFCF+wIK5/QxdPctPe0BCjaIVkqnvfWbTCU7XBy4Y+k/LjRFqpLUmLpyiTJJ/WSVTEpWhSiTnAB7RjPBbaq67NxQoGTiwlO7SOEr3IiSEolk3xdcC5kmGZBsfrUAAAAASUVORK5CYII="
-        alt="Back"
-      />
-      Back
+    <button class="main-site-back" 
+    onclick="redirectToMainSite()">
+    <i class="ri-arrow-left-line"></i><div class="backfont">Back</div>
     </button>
 
     <header>
+      
       <nav>
+        <a href="https://nino-os.github.io/commands">
         <h1><span>Nino-OS</span> Commands <i class="ri-slash-commands-2"></i></h1>
+       </a>
       </nav>
+      
+      
     </header>
+
+    <footer>
+      <p>
+        &copy; 2023-2024
+        <a class="footer" href="https://nino-os.github.io/dashboard/"
+          >Create by Robotic Germany ✠</a
+        >
+      </p>
+    </footer>
     
 <div id="search-container">
-  <button id="ri-search-line" class="ri-search-line" onclick="toggleSearch()"> Klick Search</button>
+  <button id="ri-search-line" class="ri-search-line" onclick="toggleSearch()"> Search</button>
   <input type="search" id="search-input" placeholder="Press Enter to confirm ..." onblur="deactivateSearch()">
   <button id="clear-button"><i class="ri-delete-bin-line"></i> </button>
 </div>
@@ -699,14 +710,6 @@
       </section>
     </main>
 
-    <footer>
-      <p>
-        &copy; 2023-2024
-        <a class="footer" href="https://nino-os.github.io/dashboard/"
-          >Create by Robotic Germany ✠</a
-        >
-      </p>
-    </footer>
     <script src="command-script.js"></script>
   </body>
 </html>

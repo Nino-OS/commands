@@ -102,14 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   searchInput.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
-      performSearch();
+      if (searchInput.value === "") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        performSearch();
+      }
     }
   });
 
   window.addEventListener("load", function () {
     searchInput.value = "";
   });
-  //testing
   restButton.addEventListener("click", function () {
     searchInput.value = "Resting 🚮";
     searchInput.style.color = "#e00000";
@@ -150,7 +156,6 @@ function activateSearch() {
 function deactivateSearch() {
   var searchButton = document.getElementById("ri-search-line");
   var searchInput = document.getElementById("search-input");
-
   searchButton.style.display = "inline-block";
   searchInput.style.display = "none";
 }
