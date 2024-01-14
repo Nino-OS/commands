@@ -220,13 +220,14 @@ p {
     display: none;
   }
 
-  button#clear-button {
+  #clear-button {
     height: 40px;
     width: 60px;
   }
 
-  button#ri-search-line {
+  #ri-search-line {
     font-size: 20px;
+    bottom: 80px;
     width: 80px;
     height: 40px;
   }
@@ -285,12 +286,6 @@ p {
 
   .backfont {
     display: none;
-  }
-
-  #clear-button {
-    width: 34px;
-    height: 34px;
-    font-size: 0;
   }
 
   #command {
