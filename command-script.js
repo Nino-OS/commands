@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         performSearch();
 
         setTimeout(function () {
-          searchInput.value = `${query}`;
+          searchInput.value = `/${query}`;
         }, 200);
 
         setTimeout(function () {
