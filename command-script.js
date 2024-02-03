@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const restButton = document.getElementById("clear-button");
 
   function performSearch() {
-    const query = searchInput.value.toLowerCase();
+    const queryInput = searchInput.value.toLowerCase();
+    const query = `/${queryInput}`;
 
     let foundResults = false;
 
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         performSearch();
 
         setTimeout(function () {
-          searchInput.value = `/${query}`;
+          searchInput.value = `${query}`;
         }, 200);
 
         setTimeout(function () {
