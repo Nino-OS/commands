@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(function () {
           searchInput.value = "";
-          searchInput.style.color = "#666";
+          searchInput.style.color = "#fff";
           searchInput.placeholder = "Press Enter to confirm ...";
           performSearch();
         }, 1400);
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(function () {
           searchInput.value = "";
-          searchInput.style.color = "#666";
+          searchInput.style.color = "#fff";
           searchInput.placeholder = "Press Enter to confirm ...";
         }, 2000);
       }
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.placeholder = "Resting 🚮";
 
     searchInput.value = "";
-    searchInput.style.color = "#666";
+    searchInput.style.color = "#fff";
     searchInput.placeholder = "Press Enter to confirm ...";
     performSearch();
     window.scrollTo({

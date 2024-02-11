@@ -1,9 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #0a0a0a;
-  color: #a5a5a5;
+  font-family: "Poppins", sans-serif;
+  background-color: #18181b;
 }
 
 body.dark-theme {
@@ -22,51 +21,56 @@ header {
 }
 
 .footer:hover {
-  background-color: rgba(0, 75, 251, 0.349);
+  background-color: #0e61efaf;
   color: black;
 }
 
 footer {
   text-align: center;
-  background: #303f9f24;
-  color: white;
+  background: transparent;
+  color: #fff;
   padding: 1rem 0;
   margin-top: 2rem;
-  border: 1px solid #9c27b0;
+  border: 1px solid #0451d5;
 }
 
 nav h1 {
-  font-size: 2em;
-  color: #cecece;
-  background: linear-gradient(to bottom, #001b44, #2b00ff);
+  font-size: 60px;
+  color: #fff;
+  background: transparent;
+}
+
+h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
 }
 
 nav i.ri-slash-commands-2 {
-  font-size: 24px;
-  color: #d400ff;
+  font-size: 60px;
+  color: #0451d5;
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: #111;
+  background: #000000;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  color: #ccc;
+  box-shadow: 0 0 10px #000000;
+  color: #fff;
 }
 
 section {
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background: #111;
-  color: #ccc;
+  box-shadow: 0 0 10px #000000;
+  background: #000000;
+  color: #fff;
 }
 
 h2 {
-  color: #999999;
+  color: #fff;
 }
 
 ul {
@@ -81,7 +85,7 @@ ul li {
 code {
   background-color: #f5f5f5;
   padding: 2px 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-radius: 3px;
   font-family: monospace;
 }
@@ -94,10 +98,10 @@ code {
 }
 
 #search-input {
-  color: #e8e8e8;
-  background-color: rgb(0, 6, 28);
+  color: #fff;
+  background-color: #000815;
   padding: 20px 10px;
-  border: 2px solid #41cc00;
+  border: 2px solid #0451d5;
   border-radius: 8px;
   font-size: 20px;
   width: calc(100% - 120px);
@@ -121,7 +125,7 @@ code {
 }
 
 #search-input::placeholder {
-  color: #c2c2c2;
+  color: #005b02;
   font-style: italic;
   font-size: 20px;
   cursor: text;
@@ -129,7 +133,7 @@ code {
 
 .main-site-back {
   background: #ff2b2b;
-  color: #000000;
+  color: #ffffff;
   border: none;
   width: 120px;
   height: 60px;
@@ -216,6 +220,15 @@ p {
 }
 
 @media (max-width: 600px) {
+  nav i.ri-slash-commands-2 {
+    font-size: 34px;
+    color: #0451d5;
+  }
+
+  nav h1 {
+    font-size: 2em;
+  }
+
   .PCFooter {
     display: none;
   }
@@ -306,7 +319,7 @@ p {
 }
 
 ul li code {
-  background: linear-gradient(to bottom, #001b44, #0e0044);
+  background: #1ebc23;
   color: #fff;
   padding: 4px 6px;
   border-radius: 3px;
@@ -322,7 +335,7 @@ ul li {
 
 ul li:before {
   content: "➦";
-  color: #9900d1;
+  color: #0a71f8;
   position: absolute;
   left: 0;
   top: 2px;
@@ -331,7 +344,7 @@ ul li:before {
 ul li p {
   font-size: 16px;
   margin: 5px 0;
-  color: #ccc;
+  color: #fff;
 }
 
 ul li p code {
@@ -343,8 +356,8 @@ ul li p code {
 }
 
 .alert.alert-success {
-  background-color: #4caf50;
-  color: white;
+  background-color: #1ebc23;
+  color: #fff;
   padding: 10px;
   text-align: center;
   position: fixed;

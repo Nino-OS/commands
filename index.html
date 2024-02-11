@@ -16,8 +16,8 @@
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
-    <link
+      />
+    <link 
       rel="icon"
       type="image/png"
       sizes="16x16"
@@ -26,7 +26,8 @@
     <link rel="manifest" href="./images/site.webmanifest" />
     <title>Nino-OS | Commands</title>
   </head>
-  <body>
+  <body>      
+
     <button class="main-site-back" 
     onclick="redirectToMainSite()">
     <i class="ri-arrow-left-line"></i><div class="backfont">Back</div>
@@ -35,8 +36,7 @@
     <header>
       
       <nav>
-        <a href="https://nino-os.github.io/commands">
-        <h1><span>Nino-OS</span> Commands <i class="ri-slash-commands-2"></i></h1>
+        <h1>The <span>Nino-OS</span> Commands<i class="ri-slash-commands-2"></i></h1>
        </a>
       </nav>
       
@@ -543,15 +543,15 @@
         <h2>The Welcome-System commands can by Mod's and Admin's 👋</h2>
         <ul>
           <li>
-            <code id="command" onclick="copyCommand('/setup-welcome')"
-              >/setup-welcome</code
+            <code id="command" onclick="copyCommand('/welcome-setup')"
+              >/welcome-setup</code
             >
           </li>
           <p>╚[channel] - [message] - Setup the WELCOMING-System 🟢,</p>
           <h2> </h2>
           <li>
-            <code id="command" onclick="copyCommand('/disable-welcome')"
-              >/disable-welcome</code
+            <code id="command" onclick="copyCommand('/welcome-disable')"
+              >/welcome-disable</code
             >
           </li>
           <p>╚Disable the WELCOMING-System 🔴</p>
@@ -563,15 +563,15 @@
         <h2>The Counting-System commands can by Mod's and Admin's 🔢</h2>
         <ul>
           <li>
-            <code id="command" onclick="copyCommand('/start-counting')"
-              >/start-counting</code
+            <code id="command" onclick="copyCommand('/counting setup')"
+              >/counting setup</code
             >
           </li>
           <p>╚Start the Counting System 🔢,</p>
           <h2> </h2>
           <li>
-            <code id="command" onclick="copyCommand('/stop-counting')"
-              >/stop-counting</code
+            <code id="command" onclick="copyCommand('/counting disable')"
+              >/counting disable</code
             >
           </li>
           <p>╚DISABLE the COUNTING system 🔢</p>
@@ -709,6 +709,26 @@
         </ul>
       </section>
 
+      <section id="ticket">
+        <h2>The Ticket-System commands can by Mod's and Admin's 🎫</h2>
+        <ul>
+          <li>
+            <code id="command" onclick="copyCommand('/ticket-setup')"
+              >/ticket-setup</code
+            >
+          </li>
+          <p>╚- [channel] - [category] - [title] - [description] - [ticket-title] - [ticket-description] - [handlers] - (button-name) - (button-emoji) - (transcripts) - Setup the Ticket-System 🟢,</p>
+          <h2> </h2>
+          <li>
+            <code id="command" onclick="copyCommand('/ticket-disable')"
+              >/ticket-disable</code
+            >
+          </li>
+          <p>╚Disable the Ticket-System 🔴</p>
+          <h2> </h2>
+        </ul>
+      </section>
+
       <section id="nsfw">
         <h2>ONLY USED IN NSFW-CHANNEL's 🔞</h2>
         <ul>
@@ -731,5 +751,6 @@
     </footer>
     
     <script src="command-script.js"></script>
-  </body>
+
+</body>
 </html>
