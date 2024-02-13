@@ -203,19 +203,14 @@ p {
 
   #clear-button:hover,
   #ri-search-line:hover {
-    font-size: 20px;
-    color: #000000;
-    background-color: #41cc00;
     width: 150px;
     height: 60px;
   }
 
   .main-site-back:hover {
-    background: #41cc00;
-    color: #000000;
     width: 130px;
     height: 66px;
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
