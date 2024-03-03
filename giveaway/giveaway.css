@@ -42,7 +42,7 @@ code {
 }
 
 .footer:hover {
-  background-color: #0e61efaf;
+  background-color: #540bff;
   color: black;
 }
 
@@ -52,7 +52,7 @@ footer {
   color: #fff;
   padding: 1rem 0;
   margin-top: 2rem;
-  border: 1px solid #0451d5;
+  border: 1px solid #540bff;
 }
 
 nav h1 {
@@ -78,7 +78,7 @@ h3 span {
 
 nav i.ri-slash-commands-2 {
   font-size: 60px;
-  color: #0451d5;
+  color: #540bff;
 }
 
 h2 {
@@ -206,7 +206,7 @@ h2 {
 
   nav i.ri-slash-commands-2 {
     font-size: 34px;
-    color: #0451d5;
+    color: #540bff;
   }
 
   .img2 img,
@@ -287,7 +287,7 @@ h2 {
 @media (max-width: 600px) {
   nav i.ri-slash-commands-2 {
     font-size: 34px;
-    color: #0451d5;
+    color: #540bff;
   }
 
   .PCFooter {
