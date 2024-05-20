@@ -5,6 +5,10 @@ body {
   background-color: #18181b;
 }
 
+.hide {
+  display: none;
+}
+
 body.dark-theme {
   background: #1a1a1a;
 }
