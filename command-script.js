@@ -170,7 +170,7 @@ document.addEventListener("contextmenu", function (event) {
 })();
 
 document.addEventListener("keydown", function (event) {
-  if (event.key == 123) {
+  if (event.key == "F12") {
     event.preventDefault();
   }
   if (event.ctrlKey && event.shiftKey && event.keyCode == "I".charCodeAt(0)) {
