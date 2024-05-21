@@ -115,6 +115,7 @@ code {
   transform: translateX(-50%) scale(0);
   opacity: 0;
   animation: zoomIn 0.4s ease-out forwards;
+  caret-color: #0a71f8;
 }
 
 @keyframes zoomIn {
