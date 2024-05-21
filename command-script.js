@@ -149,7 +149,7 @@ document.addEventListener("contextmenu", function (event) {
 (function () {
   function preventDevTools() {
     if (window.devtools.open) {
-      alert("Entwicklerwerkzeuge sind deaktiviert.");
+      );
       window.location.reload();
     }
   }
