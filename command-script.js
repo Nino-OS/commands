@@ -141,3 +141,46 @@ function deactivateSearch() {
   searchButton.style.display = "inline-block";
   searchInput.style.display = "none";
 }
+
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
+
+(function () {
+  function preventDevTools() {
+    if (window.devtools.open) {
+      alert("Entwicklerwerkzeuge sind deaktiviert.");
+      window.location.reload();
+    }
+  }
+
+  window.devtools = { open: false };
+  window.addEventListener("devtoolschange", preventDevTools);
+
+  (function () {
+    var devtools = window.devtools;
+    var element = new Image();
+    Object.defineProperty(element, "id", {
+      get: function () {
+        devtools.open = true;
+        window.dispatchEvent(new Event("devtoolschange"));
+      },
+    });
+    return;
+  })();
+})();
+
+document.addEventListener("keydown", function (event) {
+  if (event.key == 123) {
+    event.preventDefault();
+  }
+  if (event.ctrlKey && event.shiftKey && event.keyCode == "I".charCodeAt(0)) {
+    event.preventDefault();
+  }
+  if (event.ctrlKey && event.shiftKey && event.keyCode == "J".charCodeAt(0)) {
+    event.preventDefault();
+  }
+  if (event.ctrlKey && event.keyCode == "U".charCodeAt(0)) {
+    event.preventDefault();
+  }
+});
