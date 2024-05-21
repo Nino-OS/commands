@@ -149,7 +149,6 @@ document.addEventListener("contextmenu", function (event) {
 (function () {
   function preventDevTools() {
     if (window.devtools.open) {
-      );
       window.location.reload();
     }
   }
