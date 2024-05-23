@@ -173,13 +173,31 @@ document.addEventListener("keydown", function (event) {
   if (event.key == "F12") {
     event.preventDefault();
   }
-  if (event.ctrlKey && event.shiftKey && event.keyCode == "I".charCodeAt(0)) {
+  if (
+    (event.ctrlKey || event.metaKey) &&
+    event.shiftKey &&
+    event.keyCode == "I".charCodeAt(0)
+  ) {
     event.preventDefault();
   }
-  if (event.ctrlKey && event.shiftKey && event.keyCode == "J".charCodeAt(0)) {
+  if (
+    (event.ctrlKey || event.metaKey) &&
+    event.shiftKey &&
+    event.keyCode == "J".charCodeAt(0)
+  ) {
     event.preventDefault();
   }
-  if (event.ctrlKey && event.keyCode == "U".charCodeAt(0)) {
+  if ((event.ctrlKey || event.metaKey) && event.keyCode == "U".charCodeAt(0)) {
+    event.preventDefault();
+  }
+  if (
+    (event.ctrlKey || event.metaKey) &&
+    event.shiftKey &&
+    event.keyCode == 67
+  ) {
+    event.preventDefault();
+  }
+  if ((event.ctrlKey || event.metaKey) && event.keyCode == 83) {
     event.preventDefault();
   }
 });
